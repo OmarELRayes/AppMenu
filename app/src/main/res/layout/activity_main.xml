@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="com.example.android.appmenu.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2.5dp">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fb_card_view"
+                style="@style/CustomCardView"
+                android:onClick="openFb"
+                card_view:cardCornerRadius="4dp"
+                android:foreground="?android:attr/selectableItemBackground">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/facebook"/>
+                <TextView
+                    android:id="@+id/facebook_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|bottom"
+                    android:layout_marginBottom="15dp"
+                    android:text="Facebook" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/twitter_card_view"
+                style="@style/CustomCardView"
+                card_view:cardCornerRadius="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="openTw">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/twitter"/>
+                <TextView
+                    android:id="@+id/twitter_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|bottom"
+                    android:layout_marginBottom="15dp"
+                    android:text="Twitter"/>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2.5dp">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/whatsapp_card_view"
+                style="@style/CustomCardView"
+                card_view:cardCornerRadius="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="openWa">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/whats"/>
+                <TextView
+                    android:id="@+id/whatsapp_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|bottom"
+                    android:text="WhatsApp"
+                    android:layout_marginBottom="15dp"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/Insta_card_view"
+                style="@style/CustomCardView"
+                card_view:cardCornerRadius="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="openInsta">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/insta"/>
+                <TextView
+                    android:id="@+id/insta_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Instagram"
+                    android:gravity="center|bottom"
+                    android:layout_marginBottom="15dp"/>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2.5dp">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/askfm_card_view"
+                style="@style/CustomCardView"
+                card_view:cardCornerRadius="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="openAsk">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ask"/>
+                <TextView
+                    android:id="@+id/ask_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|bottom"
+                    android:text="Ask.fm"
+                    android:layout_marginBottom="15dp"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/snap_card_view"
+                style="@style/CustomCardView"
+                card_view:cardCornerRadius="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="openSnap">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/snap"/>
+                <TextView
+                    android:id="@+id/snap_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Snapchat"
+                    android:gravity="center|bottom"
+                    android:layout_marginBottom="15dp"/>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2.5dp">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/youtube_card_view"
+                style="@style/CustomCardView"
+                card_view:cardCornerRadius="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="openYouTube">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/youtube"/>
+                <TextView
+                    android:id="@+id/youtube_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|bottom"
+                    android:text="YouTube"
+                    android:layout_marginBottom="15dp"
+                    />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/quora_card_view"
+                style="@style/CustomCardView"
+                card_view:cardCornerRadius="4dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:onClick="openQoura">
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:scaleType="centerCrop"
+                    android:layout_gravity="center"
+                    android:src="@drawable/quora"/>
+                <TextView
+                    android:id="@+id/quora_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Quora"
+                    android:gravity="center|bottom"
+                    android:layout_marginBottom="15dp"/>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rayes_card_view"
+            android:layout_height="150dp"
+            android:layout_width="150dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="4dp"
+            android:padding="10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:onClick="openRayesFbPage">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/deadpool"/>
+            <TextView
+                android:id="@+id/rayes_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Omar ELRayes"
+                android:gravity="center|bottom"
+                android:layout_marginBottom="5dp"
+                />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
